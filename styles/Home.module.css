@@ -78,6 +78,14 @@
   flex-wrap: wrap;
   max-width: 800px;
   margin-top: 3rem;
+
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.search input {
+  margin-right: 0.5em;
 }
 
 .card {
@@ -114,9 +122,42 @@
   height: 1em;
 }
 
+.profile {
+  display: flex;
+  margin-top: 2em;
+}
+
+.profile-image {
+  margin-right: 2em;
+}
+
+.back a {
+  color: blue;
+  text-decoration: underline;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+
+  .search input {
+    margin-right: 0;
+    margin-bottom: 0.5em;
+  }
+
+  .search input,
+  .search button {
+    width: 100%;
+  }
+
+  .profile {
+    flex-direction: column;
+  }
+
+  .profile-image {
+    max-width: 100%;
+    margin: 0 auto;
   }
 }
